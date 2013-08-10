@@ -5,6 +5,7 @@
 add_theme_support('post-thumbnails');
 add_image_size('gallery-full', 1280, 800, false);
 add_filter('image_size_names_choose', 'photostory_custom_sizes');
+add_filter('show_admin_bar', '__return_false');  
 
 function photostory_custom_sizes($sizes) {
 	return array_merge($sizes, array(

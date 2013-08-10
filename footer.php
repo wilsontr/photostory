@@ -1,3 +1,5 @@
+</article>
+
 <?php wp_footer(); ?>
 
 <script type="text/javascript">
