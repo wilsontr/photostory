@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<link href='http://fonts.googleapis.com/css?family=Linden+Hill:400,400italic' rel='stylesheet' type='text/css'>
 <?php
 
 add_action( 'wp_enqueue_scripts', 'photostory_scripts' );
@@ -54,6 +55,11 @@ function photostory_scripts() {
 			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 		</<?php echo $heading_tag; ?>>
 		<div id="nav_button">&#9776;</div>
+		<ul id="site-social">
+			<li class="twitter"><a href="http://twitter.com/scondolences">t</a></li>
+			<li class="tumblr"><a href="http://scantcondolences.tumblr.com">u</a></li>
+			<li class="email"><a href="mailto:scantcondolences@gmail.com">&#9993;</a></li>
+		</ul>
 	</div>
 	<nav>
 		<ul>
