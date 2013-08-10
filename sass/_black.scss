@@ -1,0 +1,13 @@
+/* black theme */
+
+body {
+	background-color: #000;
+	color: #fff;
+
+	a {
+		color: #eee;
+		&:hover {
+			color: #ddd;
+		}
+	}
+}
