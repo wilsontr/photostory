@@ -6,6 +6,12 @@ add_theme_support('post-thumbnails');
 add_image_size('gallery-full', 1280, 800, false);
 add_filter('image_size_names_choose', 'photostory_custom_sizes');
 add_filter('show_admin_bar', '__return_false');  
+add_filter('post_comments_feed_link','photostory_remove_comments_rss');
+
+
+function photostory_remove_comments_rss( $for_comments ) {
+    return;
+}
 
 function photostory_custom_sizes($sizes) {
 	return array_merge($sizes, array(
@@ -17,9 +23,9 @@ add_filter('post_gallery', 'photostory_gallery');
 
 function photostory_gallery($output, $attr) {
 
-	global $post;
+    global $post;
 
-   $attrs = shortcode_atts(array(
+    $attrs = shortcode_atts(array(
         'order'      => 'ASC',
         'orderby'    => 'menu_order ID',
         'id'         => $post->ID,

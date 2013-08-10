@@ -25,8 +25,9 @@ function photostory_scripts() {
 
 	// Add the blog description for the home/front page.
 	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
+	if ( $site_description && ( is_home() || is_front_page() ) ) {
 		echo " | $site_description ";
+	}
 
 
 	?></title>
@@ -37,6 +38,9 @@ function photostory_scripts() {
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="alternate" type="application/atom+xml" title="<? echo(bloginfo( 'name' )); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>"/>
+<link rel="alternate" type="application/rss+xml" title="<? echo(bloginfo( 'name' )); ?> RSS 2.0 Feed" href="<?php bloginfo('rss2_url'); ?>"/>
+
 <?php wp_head(); ?>
 
 </head>
