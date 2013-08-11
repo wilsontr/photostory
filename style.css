@@ -376,19 +376,18 @@ article h1 {
 /* line 54, sass/_album.scss */
 .social-links-single .social-links-block li {
   display: inline-block;
-  width: 17px;
   vertical-align: top;
   text-align: center;
 }
-/* line 60, sass/_album.scss */
+/* line 59, sass/_album.scss */
 .social-links-single .social-links-block li a {
   display: inline-block;
 }
-/* line 68, sass/_album.scss */
+/* line 67, sass/_album.scss */
 .social-links-single:hover .social-links-share-button {
   opacity: 0;
 }
-/* line 72, sass/_album.scss */
+/* line 71, sass/_album.scss */
 .social-links-single:hover .social-links-block {
   opacity: 1;
 }
