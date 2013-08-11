@@ -37,7 +37,6 @@ header {
 	position: relative;
 	margin-bottom: 10px;
 	padding: 10px;
-	border-bottom: 1px solid #ddd;
 	width: 100%;
 	background: #fff;
 	padding: 0;
@@ -47,6 +46,10 @@ header {
 	h1#site-title, div#site-title {
 		font-size: 2em;
 		margin: 0.8em 0;
+
+		.subtitle {
+			font-size: 1em;
+		}
 	}
 
 	#wrap {
@@ -54,6 +57,7 @@ header {
 		margin: 0px auto;
 		text-align: left;
 		position: relative;
+		border-bottom: 1px solid #ddd;		
 	}	
 
 	#nav_button {
@@ -78,7 +82,13 @@ header {
 			}
 
 		}
+	}
 
+	#subtitle {
+		position: absolute;
+		display: inline-block;
+		right: 5px;
+		top: 3px;
 	}
 }
 
@@ -175,6 +185,11 @@ and (max-width : 480px) {
 		#site-social {
 			display: none;
 		}
+
+		#subtitle {
+			display: none;
+		}
+		
 	}
 
 	nav {
@@ -209,6 +224,7 @@ and (max-width : 480px) {
 			}
 		}
 	}
+
 
 	#river {
 		.album-post {

@@ -57,10 +57,19 @@ function photostory_scripts() {
 			</<?php echo $heading_tag; ?>>
 			<div id="nav_button">&#9776;</div>
 			<ul id="site-social">
-				<li class="twitter"><a href="http://twitter.com/scondolences">t</a></li>
-				<li class="tumblr"><a href="http://scantcondolences.tumblr.com">u</a></li>
-				<li class="email"><a href="mailto:scantcondolences@gmail.com">&#9993;</a></li>
+				<?php if ( get_theme_mod('twitter_username') ): ?>
+				<li class="twitter"><a href="http://twitter.com/<?php echo(get_theme_mod('twitter_username')); ?>">t</a></li>
+				<?php endif; ?>
+				<?php if ( get_theme_mod('tumblr_address') ): ?>
+				<li class="tumblr"><a href="<?php echo(get_theme_mod('tumblr_address')); ?>">u</a></li>
+				<?php endif; ?>
+				<?php if ( get_theme_mod('contact_email') ): ?>
+				<li class="email"><a href="mailto:<?php echo(get_theme_mod('contact_email')); ?>">&#9993;</a></li>
+				<?php endif; ?>
 			</ul>
+			<?php if ( get_bloginfo ( 'description' ) ): ?>
+			<div id="subtitle"><?php echo(get_bloginfo ( 'description' )); ?></div>
+			<?php endif; ?>
 		</div>
 		<nav>
 			<ul>

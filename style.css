@@ -49,29 +49,33 @@ header {
   position: relative;
   margin-bottom: 10px;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
   width: 100%;
   background: #fff;
   padding: 0;
   text-align: center;
 }
-/* line 47, sass/_main.scss */
+/* line 46, sass/_main.scss */
 header h1#site-title, header div#site-title {
   font-size: 2em;
   margin: 0.8em 0;
 }
-/* line 52, sass/_main.scss */
+/* line 50, sass/_main.scss */
+header h1#site-title .subtitle, header div#site-title .subtitle {
+  font-size: 1em;
+}
+/* line 55, sass/_main.scss */
 header #wrap {
   max-width: 1200px;
   margin: 0px auto;
   text-align: left;
   position: relative;
+  border-bottom: 1px solid #ddd;
 }
-/* line 59, sass/_main.scss */
+/* line 63, sass/_main.scss */
 header #nav_button {
   display: none;
 }
-/* line 63, sass/_main.scss */
+/* line 67, sass/_main.scss */
 header #site-social {
   position: absolute;
   right: 10px;
@@ -80,60 +84,67 @@ header #site-social {
   text-transform: none;
   font-size: 1.5em;
 }
-/* line 71, sass/_main.scss */
+/* line 75, sass/_main.scss */
 header #site-social li {
   display: inline-block;
   width: 0.7em;
   vertical-align: top;
 }
-/* line 76, sass/_main.scss */
+/* line 80, sass/_main.scss */
 header #site-social li.email {
   padding-top: 2px;
 }
+/* line 87, sass/_main.scss */
+header #subtitle {
+  position: absolute;
+  display: inline-block;
+  right: 5px;
+  top: 3px;
+}
 
 /* Nav */
-/* line 90, sass/_main.scss */
+/* line 100, sass/_main.scss */
 nav ul {
   padding: 0px;
 }
-/* line 93, sass/_main.scss */
+/* line 103, sass/_main.scss */
 nav ul li {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 97, sass/_main.scss */
+/* line 107, sass/_main.scss */
 nav ul li a {
   display: inline-block;
 }
 
-/* line 105, sass/_main.scss */
+/* line 115, sass/_main.scss */
 header #wrap, article {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 111, sass/_main.scss */
+/* line 121, sass/_main.scss */
 article {
   text-transform: uppercase;
   padding: 10px;
 }
-/* line 114, sass/_main.scss */
+/* line 124, sass/_main.scss */
 article h1.entry-title {
   font-size: 2.3em;
 }
 
-/* line 121, sass/_main.scss */
+/* line 131, sass/_main.scss */
 .gallery {
   text-align: center;
   width: 100%;
 }
-/* line 125, sass/_main.scss */
+/* line 135, sass/_main.scss */
 .gallery .gallery-image {
   margin: 0px auto 50px;
 }
 
-/* line 130, sass/_main.scss */
+/* line 140, sass/_main.scss */
 footer {
   text-align: center;
   font-size: 0.8em;
@@ -142,12 +153,12 @@ footer {
 
 /* Mobile */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* line 142, sass/_main.scss */
+  /* line 152, sass/_main.scss */
   html {
     margin-top: 50px;
   }
 
-  /* line 146, sass/_main.scss */
+  /* line 156, sass/_main.scss */
   header {
     position: fixed;
     padding: 0;
@@ -155,17 +166,17 @@ footer {
     left: 0;
     width: 100%;
   }
-  /* line 153, sass/_main.scss */
+  /* line 163, sass/_main.scss */
   header #top-row {
     background: #fff;
     padding: 10px;
   }
-  /* line 157, sass/_main.scss */
+  /* line 167, sass/_main.scss */
   header #top-row #site-title {
     font-size: 1.5em;
     margin: 5px 0 0 0;
   }
-  /* line 163, sass/_main.scss */
+  /* line 173, sass/_main.scss */
   header #nav_button {
     display: inline-block;
     position: absolute;
@@ -176,12 +187,16 @@ footer {
     line-height: 1em;
     cursor: pointer;
   }
-  /* line 175, sass/_main.scss */
+  /* line 185, sass/_main.scss */
   header #site-social {
     display: none;
   }
+  /* line 189, sass/_main.scss */
+  header #subtitle {
+    display: none;
+  }
 
-  /* line 180, sass/_main.scss */
+  /* line 195, sass/_main.scss */
   nav {
     background: #fff;
     width: 100%;
@@ -191,23 +206,23 @@ footer {
     overflow: hidden;
     box-shadow: 0px 2px 3px #777;
   }
-  /* line 189, sass/_main.scss */
+  /* line 204, sass/_main.scss */
   nav.visible {
     max-height: 150px;
   }
-  /* line 193, sass/_main.scss */
+  /* line 208, sass/_main.scss */
   nav ul {
     width: 100%;
     border-top: 1px solid #ddd;
     margin: 0;
   }
-  /* line 198, sass/_main.scss */
+  /* line 213, sass/_main.scss */
   nav ul li {
     border-bottom: 1px solid #ddd;
     display: block;
     margin: 0;
   }
-  /* line 203, sass/_main.scss */
+  /* line 218, sass/_main.scss */
   nav ul li a {
     padding: 10px 0px;
     display: block;
@@ -215,7 +230,7 @@ footer {
     text-align: center;
   }
 
-  /* line 214, sass/_main.scss */
+  /* line 230, sass/_main.scss */
   #river .album-post {
     margin: 0px 0px 10px;
   }
@@ -290,7 +305,7 @@ footer {
 }
 
 /* line 21, sass/_album_list.scss */
-.page-template-albums-php header {
+.page-template-albums-php header #wrap {
   border-bottom: none;
 }
 
