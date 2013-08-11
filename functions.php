@@ -89,8 +89,8 @@ function photostory_custom_sizes($sizes) {
 }
 
 /* Customize gallery shortcode */
-add_filter('post_gallery', 'photostory_gallery');
-function photostory_gallery($output) {
+add_filter('post_gallery', 'photostory_gallery', 10, 2);
+function photostory_gallery($output, $attr, $foo) {
 
     global $post;
 
@@ -103,8 +103,13 @@ function photostory_gallery($output) {
         'post_type' => 'attachment', 
         'post_mime_type' => 'image', 
         'post_status' => 'inherit'
-    ), $attr);
-    
+    ), $attr, 'gallery');
+
+    if ( $attr['ids'] ) {
+        $attrs['include'] = $attr['ids'];
+        unset($attrs['post_parent']);
+    }
+
     $_attachments = get_posts( $attrs );
 
     $attachments = array();
