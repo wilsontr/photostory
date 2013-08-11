@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="river">
+<div id="river" class="content">
 
 <?php
 

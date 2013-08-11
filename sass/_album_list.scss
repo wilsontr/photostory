@@ -21,3 +21,17 @@
 .page-template-albums-php header #wrap {
 	border-bottom: none;
 }
+
+@media only screen and (min-width : 320px) and (max-width : 480px),
+	only screen and ( min-device-width: 320px ) and ( max-device-width: 480px ) { 
+
+	#album-list {
+		.single-album {
+			margin: 0px 0 8px;
+
+			.post-link {
+				padding-left: 8px;
+			}
+		}
+	}	
+}

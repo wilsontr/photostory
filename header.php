@@ -42,6 +42,7 @@ function photostory_scripts() {
 		$featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); 
 ?><meta property="og:image" content="<?php echo($featured_image_url); ?>"/>
 <?php } ?>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
 <?php if ( is_single() ) {
 	$tag_terms = get_the_tags(); 

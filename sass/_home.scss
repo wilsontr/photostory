@@ -15,7 +15,8 @@
 
 /* Desktop only */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px),
+	only screen and (min-device-width: 480px) {
 
 	body.home {
 		margin-top: 140px;

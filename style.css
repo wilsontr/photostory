@@ -35,7 +35,7 @@ img {
 }
 
 /* line 27, sass/_main.scss */
-h1 {
+h1, h2, h3, h4, h5 {
   font-weight: normal;
 }
 
@@ -60,15 +60,20 @@ footer {
 }
 
 /* Mobile */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* line 57, sass/_main.scss */
+@media only screen and (min-width: 320px) and (max-width: 480px), only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 56, sass/_main.scss */
   html {
-    margin-top: 50px;
+    margin-top: 2.5em;
   }
 
-  /* line 62, sass/_main.scss */
+  /* line 65, sass/_main.scss */
   #river .album-post {
     margin: 0px 0px 10px;
+  }
+
+  /* line 71, sass/_main.scss */
+  footer {
+    margin-top: 50px;
   }
 }
 /* Header */
@@ -152,14 +157,14 @@ header #wrap {
   margin-right: auto;
 }
 
-@media only screen and (max-width: 650px) {
-  /* line 89, sass/_header.scss */
+@media only screen and (max-width: 650px), only screen and (max-device-width: 650px) {
+  /* line 90, sass/_header.scss */
   header #subtitle {
     display: none;
   }
 }
 /* Mobile */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px), only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* line 100, sass/_header.scss */
   header {
     position: fixed;
@@ -167,38 +172,42 @@ header #wrap {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 200;
+    -webkit-box-shadow: 0px 1px 2px #cccccc;
+    -moz-box-shadow: 0px 1px 2px #cccccc;
+    box-shadow: 0px 1px 2px #cccccc;
   }
-  /* line 107, sass/_header.scss */
+  /* line 109, sass/_header.scss */
   header #top-row {
     background: #fff;
-    padding: 10px;
+    padding: 0;
   }
-  /* line 111, sass/_header.scss */
+  /* line 113, sass/_header.scss */
   header #top-row #site-title {
     font-size: 1.5em;
-    margin: 5px 0 0 0;
+    margin: 0.4em 0 0 0;
   }
-  /* line 117, sass/_header.scss */
+  /* line 119, sass/_header.scss */
   header #nav_button {
     display: inline-block;
     position: absolute;
-    right: 10px;
-    top: 19px;
+    right: 7px;
+    top: 5px;
     color: #222;
     font-size: 1.5em;
     line-height: 1em;
     cursor: pointer;
   }
-  /* line 129, sass/_header.scss */
+  /* line 131, sass/_header.scss */
   header #site-social {
     display: none;
   }
-  /* line 133, sass/_header.scss */
+  /* line 135, sass/_header.scss */
   header #subtitle {
     display: none;
   }
 
-  /* line 139, sass/_header.scss */
+  /* line 141, sass/_header.scss */
   nav {
     background: #fff;
     width: 100%;
@@ -209,25 +218,24 @@ header #wrap {
     -o-transition: 300ms opacity;
     transition: 300ms opacity;
     overflow: hidden;
-    box-shadow: 0px 2px 3px #777;
   }
-  /* line 148, sass/_header.scss */
+  /* line 150, sass/_header.scss */
   nav.visible {
-    max-height: 150px;
+    max-height: 265px;
   }
-  /* line 152, sass/_header.scss */
+  /* line 154, sass/_header.scss */
   nav ul {
     width: 100%;
     border-top: 1px solid #ddd;
     margin: 0;
   }
-  /* line 157, sass/_header.scss */
+  /* line 159, sass/_header.scss */
   nav ul li {
     border-bottom: 1px solid #ddd;
     display: block;
     margin: 0;
   }
-  /* line 162, sass/_header.scss */
+  /* line 164, sass/_header.scss */
   nav ul li a {
     padding: 10px 0px;
     display: block;
@@ -250,12 +258,12 @@ header #wrap {
 }
 
 /* Desktop only */
-@media only screen and (min-width: 480px) {
-  /* line 20, sass/_home.scss */
+@media only screen and (min-width: 480px), only screen and (min-device-width: 480px) {
+  /* line 21, sass/_home.scss */
   body.home {
     margin-top: 140px;
   }
-  /* line 23, sass/_home.scss */
+  /* line 24, sass/_home.scss */
   body.home header {
     max-width: none;
     margin: 0;
@@ -263,21 +271,21 @@ header #wrap {
     position: fixed;
     border-bottom: none;
   }
-  /* line 31, sass/_home.scss */
+  /* line 32, sass/_home.scss */
   body.home #river {
     white-space: nowrap;
   }
-  /* line 34, sass/_home.scss */
+  /* line 35, sass/_home.scss */
   body.home #river .album-post {
     margin: 0px 10px;
     display: inline-block;
     vertical-align: top;
   }
-  /* line 40, sass/_home.scss */
+  /* line 41, sass/_home.scss */
   body.home #river a {
     display: inline-block;
   }
-  /* line 46, sass/_home.scss */
+  /* line 47, sass/_home.scss */
   body.home footer {
     position: fixed;
     width: 100%;
@@ -308,6 +316,16 @@ header #wrap {
   border-bottom: none;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px), only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 29, sass/_album_list.scss */
+  #album-list .single-album {
+    margin: 0px 0 8px;
+  }
+  /* line 32, sass/_album_list.scss */
+  #album-list .single-album .post-link {
+    padding-left: 8px;
+  }
+}
 /* Album page */
 /* line 5, sass/_album.scss */
 .single-post header #site-social {
@@ -338,15 +356,19 @@ article h1 {
 .gallery .gallery-image {
   margin: 0px auto 100px;
 }
+/* line 34, sass/_album.scss */
+.gallery .gallery-image:last-child {
+  margin-bottom: 0;
+}
 
-/* line 37, sass/_album.scss */
+/* line 41, sass/_album.scss */
 .social-links-single {
   position: relative;
   float: right;
   display: inline-block;
   text-align: right;
 }
-/* line 43, sass/_album.scss */
+/* line 47, sass/_album.scss */
 .social-links-single .social-links-share-button {
   position: absolute;
   color: #999;
@@ -360,7 +382,7 @@ article h1 {
   transition: opacity 300ms;
   z-index: 1;
 }
-/* line 54, sass/_album.scss */
+/* line 58, sass/_album.scss */
 .social-links-single .social-links-block {
   font-family: 'Socialglyphs-Regular', sans-serif;
   text-transform: none;
@@ -373,25 +395,52 @@ article h1 {
   z-index: 50;
   position: relative;
 }
-/* line 63, sass/_album.scss */
+/* line 67, sass/_album.scss */
 .social-links-single .social-links-block li {
   display: inline-block;
   vertical-align: top;
   text-align: center;
 }
-/* line 68, sass/_album.scss */
+/* line 72, sass/_album.scss */
 .social-links-single .social-links-block li a {
   display: inline-block;
 }
-/* line 76, sass/_album.scss */
+/* line 80, sass/_album.scss */
 .social-links-single:hover .social-links-share-button {
   opacity: 0;
 }
-/* line 80, sass/_album.scss */
+/* line 84, sass/_album.scss */
 .social-links-single:hover .social-links-block {
   opacity: 1;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px), only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 93, sass/_album.scss */
+  article {
+    padding: 2.5em 0 0 0;
+  }
+  /* line 96, sass/_album.scss */
+  article h1, article h1.entry-title {
+    font-size: 1.8em;
+  }
+
+  /* line 103, sass/_album.scss */
+  .social-links-single:nth-of-type(1) {
+    display: none;
+  }
+  /* line 107, sass/_album.scss */
+  .social-links-single .social-links-share-button {
+    opacity: 1;
+    display: inline-block;
+    position: relative;
+    top: 0;
+  }
+  /* line 114, sass/_album.scss */
+  .social-links-single .social-links-block {
+    opacity: 1;
+    display: inline-block;
+  }
+}
 @font-face {
   font-family: 'Socialglyphs-Regular';
   src: url("type/socialglyphs-regular.eot");

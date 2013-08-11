@@ -30,6 +30,10 @@ article {
 
 	.gallery-image {
 		margin: 0px auto 100px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -79,6 +83,37 @@ article {
 
 		.social-links-block {
 			opacity: 1;
+		}
+	}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 480px),
+	only screen and ( min-device-width: 320px ) and ( max-device-width: 480px ) { 
+
+	article {
+		padding: 2.5em 0 0 0;
+
+		h1, h1.entry-title {
+			font-size: 1.8em;
+		}	
+
+	}
+
+	.social-links-single {
+		&:nth-of-type(1) {
+			display: none;
+		}
+
+		.social-links-share-button {
+			opacity: 1;
+			display: inline-block;
+			position: relative;
+			top: 0;
+		}
+
+		.social-links-block {
+			opacity: 1;
+			display: inline-block;
 		}
 	}
 }

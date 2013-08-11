@@ -120,8 +120,11 @@ function photostory_gallery($output, $attr) {
     $out = '<div class="gallery">';
 
     foreach ( $attachments as $id => $image_post ) {
-    	$image_tag = wp_get_attachment_image( $image_post->ID, 'gallery-full' );
-    	$out .= '<div class="gallery-image">' . $image_tag . '</div>';
+        $gallery_image = wp_get_attachment_image_src( $id, 'gallery-full' ); 
+        $image_url = $gallery_image[0];
+    	$full_image = wp_get_attachment_image_src( $id, 'full' ); 
+        $full_image_url = $full_image[0];
+    	$out .= '<div class="gallery-image"><img src="' . $image_url . '" rel="' . $full_image_url . '"/></div>';
     }
     $out .= '</div>';
 

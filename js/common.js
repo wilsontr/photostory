@@ -58,5 +58,4 @@
 	setup_navmenu();
 	setup_facebook_share_links();
 
-
 }());

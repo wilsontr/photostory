@@ -8,7 +8,9 @@ Template Name: Album List
 
 <?php get_header(); ?>
 
-<div id="album-list">
+<div id="album-list" class="content">
+
+<h1>Albums</h1>
 
 <?php 
 $attrs = array(
