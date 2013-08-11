@@ -1,4 +1,6 @@
-</article>
+<footer>
+	&copy; <?php echo(date('Y')); ?> &nbsp;&bull;&nbsp; All rights reserved &nbsp;&bull;&nbsp; <a href="mailto:scantcondolences@gmail.com">Contact</a>
+</footer>
 
 <?php wp_footer(); ?>
 

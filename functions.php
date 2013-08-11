@@ -4,6 +4,7 @@
 
 add_theme_support('post-thumbnails');
 add_image_size('gallery-full', 1280, 800, false);
+add_image_size('home-gallery', 975, 650, false);
 add_filter('image_size_names_choose', 'photostory_custom_sizes');
 add_filter('show_admin_bar', '__return_false');  
 add_filter('post_comments_feed_link','photostory_remove_comments_rss');
@@ -28,20 +29,15 @@ function photostory_gallery($output, $attr) {
     $attrs = shortcode_atts(array(
         'order'      => 'ASC',
         'orderby'    => 'menu_order ID',
-        'id'         => $post->ID,
-        'columns'    => 3,
-        'size'       => 'thumbnail',
-        'include'    => '',
-        'exclude'    => ''
+        'size'       => 'gallery-full',
+        'posts_per_page' => -1,
+        'post_parent' => $post->ID, 
+        'post_type' => 'attachment', 
+        'post_mime_type' => 'image', 
+        'post_status' => 'inherit'
     ), $attr);
     
-    $_attachments = get_posts( array(
-    	'post_parent' => $attrs['id'], 
-    	'post_status' => 'inherit', 
-    	'post_type' => 'attachment', 
-    	'post_mime_type' => 'image', 
-    	'order' => $attrs['order'], 
-    	'orderby' => $attrs['orderby']) );
+    $_attachments = get_posts( $attrs );
 
     $attachments = array();
     foreach ( $_attachments as $key => $val ) {

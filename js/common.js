@@ -15,6 +15,23 @@ $ = jQuery.noConflict();
 		});
 	}
 
+	function resize_home_images() {
+		var newHeight = $(window).height() - $('header').height() - $('footer').height() - 60;
+		$('.post-image img').css({
+			maxHeight: newHeight + 'px',
+			width: 'auto'
+		});		
+	}
+
+	function maintain_home_image_height() {
+
+		if ( $('body').hasClass('home') && ( $(window).width() > 480 ) ) {
+			$(window).resize(resize_home_images);
+			resize_home_images();
+		}
+	}
+
+	maintain_home_image_height();
 	setup_navmenu();
 
 

@@ -8,7 +8,7 @@ body {
 	font-family: 'Linden Hill', serif;
 }
 
-header, nav {
+header, nav, footer {
 	text-transform: uppercase;
 }
 
@@ -33,6 +33,8 @@ img {
 h1 {
 	font-weight: normal;
 }
+
+/* Header */
 
 header {
 	position: relative;
@@ -70,6 +72,8 @@ header {
 
 	}
 }
+
+/* Nav */
 
 nav {
 	ul {
@@ -112,6 +116,85 @@ article {
 	}
 }
 
+#river {
+	text-transform: uppercase;
+
+	.album-post {
+		display: inline-block;
+		
+		h3 {
+			margin: 0.25em;
+		}
+	}
+}
+
+footer {
+	text-align: center;
+	font-size: 0.8em;
+	margin-top: 20px;
+}
+
+/* Desktop only */
+
+@media only screen and (min-width: 480px) {
+
+	body.home {
+		margin-top: 140px;
+		
+		header {
+			max-width: none;
+			margin: 0;
+			top: 0;
+			width: 100%;
+			position: fixed;
+			background: #fff;
+			border-bottom: none;
+			padding: 0;
+			text-align: center;
+
+			#wrap {
+				max-width: $content-width;
+				margin: 0px auto;
+				text-align: left;
+				position: relative;
+
+				#site-title, nav  {
+					margin-left: 10px;
+				}
+
+				#site-social {
+					right: 10px;
+				}
+			}
+		}
+
+		#river {
+			white-space: nowrap;
+
+			.album-post {
+				margin: 0px 10px;
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			a {
+				display: inline-block;
+			}
+
+		}
+
+		footer {
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+			background: #fff;
+		}
+
+	}	
+}
+
+/* Mobile */
+
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 480px) { 
@@ -133,7 +216,7 @@ and (max-width : 480px) {
 
 			#site-title {
 				font-size: 1.5em;
-				margin: 0;
+				margin: 5px 0 0 0;
 			}
 		}
 
@@ -141,7 +224,7 @@ and (max-width : 480px) {
 			display: inline-block;
 			position: absolute;
 			right: 10px;
-			top: 14px;
+			top: 19px;
 			color: #222;
 			font-size: 1.5em;
 			line-height: 1em;
@@ -186,6 +269,14 @@ and (max-width : 480px) {
 			}
 		}
 	}
+
+	#river {
+		.album-post {
+			margin: 0px 0px 10px;
+		}
+
+	}
+
 
 	article {
 		

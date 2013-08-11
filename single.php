@@ -6,14 +6,13 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 				
-				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h1 class="entry-title"><?php the_title(); ?></h1>
 					
 					<div class="entry-meta">
 					</div><!-- .entry-meta -->
 
 					<div class="entry-content">
-						
 
 						
 						<?php the_content(); ?>
@@ -34,7 +33,7 @@
 						
 					</div><!-- .entry-content -->
 
-				</div><!-- #post-## -->
+				</article><!-- #post-## -->
 
 <?php endwhile; /* end of the loop */ ?>
 

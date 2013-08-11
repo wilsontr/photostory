@@ -49,25 +49,25 @@ function photostory_scripts() {
 <body <?php body_class(); ?>>
 
 <header>
-	<div id="top-row">
-		<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
-		<<?php echo $heading_tag; ?> id="site-title">
-			<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-		</<?php echo $heading_tag; ?>>
-		<div id="nav_button">&#9776;</div>
-		<ul id="site-social">
-			<li class="twitter"><a href="http://twitter.com/scondolences">t</a></li>
-			<li class="tumblr"><a href="http://scantcondolences.tumblr.com">u</a></li>
-			<li class="email"><a href="mailto:scantcondolences@gmail.com">&#9993;</a></li>
-		</ul>
+	<div id="wrap">
+		<div id="top-row">
+			<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
+			<<?php echo $heading_tag; ?> id="site-title">
+				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+			</<?php echo $heading_tag; ?>>
+			<div id="nav_button">&#9776;</div>
+			<ul id="site-social">
+				<li class="twitter"><a href="http://twitter.com/scondolences">t</a></li>
+				<li class="tumblr"><a href="http://scantcondolences.tumblr.com">u</a></li>
+				<li class="email"><a href="mailto:scantcondolences@gmail.com">&#9993;</a></li>
+			</ul>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/albums">Albums</a></li>
+				<li><a href="/about">About</a></li>
+			</ul>
+		</nav>
 	</div>
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/albums">Albums</a></li>
-			<li><a href="/about">About</a></li>
-		</ul>
-	</nav>
 </header>
-
-<article>
