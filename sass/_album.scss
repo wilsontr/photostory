@@ -1,0 +1,48 @@
+/* Album page */
+
+.single-post {
+	header {
+		#site-social {
+			opacity: 0;
+			transition: 200ms all;
+		}
+
+		&:hover {
+			#site-social {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+article {
+	position: relative;
+}
+
+.social-links-single {
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	font-family: 'Socialglyphs-Regular', sans-serif;
+	text-transform: none;
+	font-size: 1.5em;
+
+	li {
+		display: inline-block;
+		width: 17px;
+		vertical-align: top;
+		text-align: center;
+
+		a {
+			display: inline-block;
+		}
+
+		&.share-facebook {
+			a {
+				margin-left: 0.2em;
+			}
+		}
+
+
+	}
+}

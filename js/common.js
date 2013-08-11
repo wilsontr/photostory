@@ -44,8 +44,19 @@
 		}
 	}
 
+	function setup_facebook_share_links() {
+		$('.share-facebook a').click(function(e) {
+			e.preventDefault();
+			window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
+  				'facebook-share-dialog', 
+  				'width=626,height=436'); 
+		});
+		
+	}
+
 	maintain_home_image_height();
 	setup_navmenu();
+	setup_facebook_share_links();
 
 
 }());
