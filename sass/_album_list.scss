@@ -1,0 +1,23 @@
+/* Album list */
+
+#album-list {
+	max-width: $content-width;
+	margin: 0px auto;
+	text-transform: uppercase;
+
+	.single-album {
+		display: inline-block;
+		margin: 0px 10px;
+
+		img {
+			width: 378px;
+		}
+
+		.post-link {
+			h3 {
+				font-size: 1em;
+				margin: 0 0 1em;
+			}
+		}
+	}
+}
