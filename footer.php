@@ -8,11 +8,13 @@
 
 <?php wp_footer(); ?>
 
+
+<?php if ( get_theme_mod('ga_id') ): ?>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
- // _gaq.push(['_setAccount', 'UA-325742-3']);
- // _gaq.push(['_trackPageview']);
+  _gaq.push(['_setAccount', '<?php echo(get_theme_mod('ga_id')); ?>']);
+  _gaq.push(['_trackPageview']);
 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -21,6 +23,7 @@
   })();
 
 </script>
+<?php endif; ?>
 
 </body>
 </html>

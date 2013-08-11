@@ -20,6 +20,11 @@ function photostory_customize_register($wp_customize) {
         'priority'   => 30,
     ) );    
 
+    $wp_customize->add_section( 'photostory_analytics' , array(
+        'title'      => __( 'Analytics', 'photostory' ),
+        'priority'   => 31,
+    ) );   
+
     $wp_customize->add_setting('twitter_username', array(
         'default' => '',
         'transport' => 'refresh'
@@ -51,6 +56,17 @@ function photostory_customize_register($wp_customize) {
         'label'        => __( 'Tumblr Address', 'photostory' ),
         'section'    => 'photostory_social',
         'settings'   => 'tumblr_address',
+    ) ) );
+
+    $wp_customize->add_setting('ga_id', array(
+        'default' => '',
+        'transport' => 'refresh'
+    ));  
+
+    $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'ga_id', array(
+        'label'        => __( 'Google Analytics ID', 'photostory' ),
+        'section'    => 'photostory_analytics',
+        'settings'   => 'ga_id',
     ) ) );
 
 }
