@@ -40,8 +40,17 @@ function photostory_scripts() {
 <?php 
 	if ( is_single() && get_post_thumbnail_id($post->ID) ) {
 		$featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); 
-?>
-<meta property="og:image" content="<?php echo($featured_image_url); ?>"/>
+?><meta property="og:image" content="<?php echo($featured_image_url); ?>"/>
+<?php } ?>
+
+<?php if ( is_single() ) {
+	$tag_terms = get_the_tags(); 
+	$tags = array();
+	foreach ( $tag_terms as $tag ) {
+		array_push($tags, $tag->name);
+	}
+	?>
+<meta name="keywords" content="<?php echo(join(', ', $tags)); ?>" />	
 <?php } ?>
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />

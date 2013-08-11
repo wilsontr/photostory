@@ -10,7 +10,7 @@ add_image_size('album-list', 365, 243, false);
 
 
 /* Disable WP admin bar */
-add_filter('show_admin_bar', '__return_false');  
+//add_filter('show_admin_bar', '__return_false');  
 
 /* Set up theme options */
 add_action('customize_register', 'photostory_customize_register');
