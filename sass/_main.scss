@@ -3,9 +3,6 @@
 body {
 	color: #333;
 	font-family: 'Linden Hill', serif;
-}
-
-header, nav, footer {
 	text-transform: uppercase;
 }
 
@@ -31,94 +28,11 @@ h1 {
 	font-weight: normal;
 }
 
-/* Header */
 
-header {
-	position: relative;
-	margin-bottom: 10px;
-	padding: 10px;
-	width: 100%;
-	background: #fff;
-	padding: 0;
-	text-align: center;
-
-
-	h1#site-title, div#site-title {
-		font-size: 2em;
-		margin: 0.8em 0;
-
-		.subtitle {
-			font-size: 1em;
-		}
-	}
-
-	#wrap {
-		max-width: $content-width;
-		margin: 0px auto;
-		text-align: left;
-		position: relative;
-		border-bottom: 1px solid #ddd;		
-	}	
-
-	#nav_button {
-		display: none;
-	}
-
-	#site-social {
-		position: absolute;
-		right: 10px;
-		top: 30px;
-		font-family: 'Socialglyphs-Regular', sans-serif;
-		text-transform: none;
-		font-size: 1.5em;
-
-		li {
-			display: inline-block;
-			width: 0.7em;
-			vertical-align: top;
-
-			&.email {
-				padding-top: 2px;
-			}
-
-		}
-	}
-
-	#subtitle {
-		position: absolute;
-		display: inline-block;
-		right: 5px;
-		top: 3px;
-	}
-}
-
-
-
-/* Nav */
-
-nav {
-	ul {
-		padding: 0px;
-
-		li {
-			display: inline-block;
-			margin-right: 10px;
-
-			a {
-				display: inline-block;
-			}
-
-		}
-	}
-}
-
-header #wrap, article {
+article {
 	max-width: $content-width;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-article {
 	text-transform: uppercase;
 
 	h1.entry-title {
@@ -153,89 +67,11 @@ and (max-width : 480px) {
 		margin-top: 50px;
 	}
 
-	header {
-		position: fixed;
-		padding: 0;
-		top: 0;
-		left: 0;
-		width: 100%;
-
-		#top-row {
-			background: #fff;
-			padding: 10px;
-
-			#site-title {
-				font-size: 1.5em;
-				margin: 5px 0 0 0;
-			}
-		}
-
-		#nav_button {
-			display: inline-block;
-			position: absolute;
-			right: 10px;
-			top: 19px;
-			color: #222;
-			font-size: 1.5em;
-			line-height: 1em;
-			cursor: pointer;
-
-		}
-
-		#site-social {
-			display: none;
-		}
-
-		#subtitle {
-			display: none;
-		}
-		
-	}
-
-	nav {
-		background: #fff;
-		width: 100%;
-		max-height: 0;
-		height: auto;
-		transition: 200ms all;
-		overflow: hidden;
-		box-shadow: 0px 2px 3px #777;
-
-		&.visible {
-			max-height: 150px;
-		}
-
-		ul {
-			width: 100%;
-			border-top: 1px solid #ddd;
-			margin: 0;
-
-			li {
-				border-bottom: 1px solid #ddd;
-				display: block;
-				margin: 0;
-
-				a {
-					padding: 10px 0px;
-					display: block;
-					/* font-weight: bold; */
-					text-align: center;
-				}
-			}
-		}
-	}
-
-
 	#river {
 		.album-post {
 			margin: 0px 0px 10px;
 		}
 
-	}
-
-
-	article {
-		
 	}
 
 
