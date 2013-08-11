@@ -90,7 +90,7 @@ function photostory_custom_sizes($sizes) {
 
 /* Customize gallery shortcode */
 add_filter('post_gallery', 'photostory_gallery', 10, 2);
-function photostory_gallery($output, $attr, $foo) {
+function photostory_gallery($output, $attr) {
 
     global $post;
 
