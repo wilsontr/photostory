@@ -1,0 +1,57 @@
+/* Homepage */
+
+
+#river {
+	text-transform: uppercase;
+
+	.album-post {
+		display: inline-block;
+		
+		h3 {
+			margin: 0.25em;
+		}
+	}
+}
+
+/* Desktop only */
+
+@media only screen and (min-width: 480px) {
+
+	body.home {
+		margin-top: 140px;
+		
+		header {
+			max-width: none;
+			margin: 0;
+			top: 0;
+			position: fixed;
+			border-bottom: none;
+			padding: 0;
+		
+		
+		}
+
+		#river {
+			white-space: nowrap;
+
+			.album-post {
+				margin: 0px 10px;
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			a {
+				display: inline-block;
+			}
+
+		}
+
+		footer {
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+			background: #fff;
+		}
+
+	}	
+}

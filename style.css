@@ -50,17 +50,28 @@ header {
   margin-bottom: 10px;
   padding: 10px;
   border-bottom: 1px solid #ddd;
+  width: 100%;
+  background: #fff;
+  padding: 0;
+  text-align: center;
 }
-/* line 42, sass/_main.scss */
+/* line 47, sass/_main.scss */
 header h1#site-title, header div#site-title {
   font-size: 2em;
   margin: 0.8em 0;
 }
-/* line 47, sass/_main.scss */
+/* line 52, sass/_main.scss */
+header #wrap {
+  max-width: 1200px;
+  margin: 0px auto;
+  text-align: left;
+  position: relative;
+}
+/* line 59, sass/_main.scss */
 header #nav_button {
   display: none;
 }
-/* line 51, sass/_main.scss */
+/* line 63, sass/_main.scss */
 header #site-social {
   position: absolute;
   right: 10px;
@@ -69,60 +80,60 @@ header #site-social {
   text-transform: none;
   font-size: 1.5em;
 }
-/* line 59, sass/_main.scss */
+/* line 71, sass/_main.scss */
 header #site-social li {
   display: inline-block;
   width: 0.7em;
   vertical-align: top;
 }
-/* line 64, sass/_main.scss */
+/* line 76, sass/_main.scss */
 header #site-social li.email {
   padding-top: 2px;
 }
 
 /* Nav */
-/* line 76, sass/_main.scss */
+/* line 90, sass/_main.scss */
 nav ul {
   padding: 0px;
 }
-/* line 79, sass/_main.scss */
+/* line 93, sass/_main.scss */
 nav ul li {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 83, sass/_main.scss */
+/* line 97, sass/_main.scss */
 nav ul li a {
   display: inline-block;
 }
 
-/* line 91, sass/_main.scss */
-header, article {
+/* line 105, sass/_main.scss */
+header #wrap, article {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 97, sass/_main.scss */
+/* line 111, sass/_main.scss */
 article {
   text-transform: uppercase;
   padding: 10px;
 }
-/* line 100, sass/_main.scss */
+/* line 114, sass/_main.scss */
 article h1.entry-title {
   font-size: 2.3em;
 }
 
-/* line 107, sass/_main.scss */
+/* line 121, sass/_main.scss */
 .gallery {
   text-align: center;
   width: 100%;
 }
-/* line 111, sass/_main.scss */
+/* line 125, sass/_main.scss */
 .gallery .gallery-image {
   margin: 0px auto 50px;
 }
 
-/* line 116, sass/_main.scss */
+/* line 130, sass/_main.scss */
 footer {
   text-align: center;
   font-size: 0.8em;
@@ -131,12 +142,12 @@ footer {
 
 /* Mobile */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* line 128, sass/_main.scss */
+  /* line 142, sass/_main.scss */
   html {
     margin-top: 50px;
   }
 
-  /* line 132, sass/_main.scss */
+  /* line 146, sass/_main.scss */
   header {
     position: fixed;
     padding: 0;
@@ -144,17 +155,17 @@ footer {
     left: 0;
     width: 100%;
   }
-  /* line 139, sass/_main.scss */
+  /* line 153, sass/_main.scss */
   header #top-row {
     background: #fff;
     padding: 10px;
   }
-  /* line 143, sass/_main.scss */
+  /* line 157, sass/_main.scss */
   header #top-row #site-title {
     font-size: 1.5em;
     margin: 5px 0 0 0;
   }
-  /* line 149, sass/_main.scss */
+  /* line 163, sass/_main.scss */
   header #nav_button {
     display: inline-block;
     position: absolute;
@@ -165,12 +176,12 @@ footer {
     line-height: 1em;
     cursor: pointer;
   }
-  /* line 161, sass/_main.scss */
+  /* line 175, sass/_main.scss */
   header #site-social {
     display: none;
   }
 
-  /* line 166, sass/_main.scss */
+  /* line 180, sass/_main.scss */
   nav {
     background: #fff;
     width: 100%;
@@ -180,23 +191,23 @@ footer {
     overflow: hidden;
     box-shadow: 0px 2px 3px #777;
   }
-  /* line 175, sass/_main.scss */
+  /* line 189, sass/_main.scss */
   nav.visible {
     max-height: 150px;
   }
-  /* line 179, sass/_main.scss */
+  /* line 193, sass/_main.scss */
   nav ul {
     width: 100%;
     border-top: 1px solid #ddd;
     margin: 0;
   }
-  /* line 184, sass/_main.scss */
+  /* line 198, sass/_main.scss */
   nav ul li {
     border-bottom: 1px solid #ddd;
     display: block;
     margin: 0;
   }
-  /* line 189, sass/_main.scss */
+  /* line 203, sass/_main.scss */
   nav ul li a {
     padding: 10px 0px;
     display: block;
@@ -204,7 +215,7 @@ footer {
     text-align: center;
   }
 
-  /* line 200, sass/_main.scss */
+  /* line 214, sass/_main.scss */
   #river .album-post {
     margin: 0px 0px 10px;
   }
@@ -234,35 +245,25 @@ footer {
     max-width: none;
     margin: 0;
     top: 0;
-    width: 100%;
     position: fixed;
-    background: #fff;
     border-bottom: none;
     padding: 0;
-    text-align: center;
   }
   /* line 34, sass/_home.scss */
-  body.home header #wrap {
-    max-width: 1200px;
-    margin: 0px auto;
-    text-align: left;
-    position: relative;
-  }
-  /* line 47, sass/_home.scss */
   body.home #river {
     white-space: nowrap;
   }
-  /* line 50, sass/_home.scss */
+  /* line 37, sass/_home.scss */
   body.home #river .album-post {
     margin: 0px 10px;
     display: inline-block;
     vertical-align: top;
   }
-  /* line 56, sass/_home.scss */
+  /* line 43, sass/_home.scss */
   body.home #river a {
     display: inline-block;
   }
-  /* line 62, sass/_home.scss */
+  /* line 49, sass/_home.scss */
   body.home footer {
     position: fixed;
     width: 100%;

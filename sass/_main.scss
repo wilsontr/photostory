@@ -38,11 +38,23 @@ header {
 	margin-bottom: 10px;
 	padding: 10px;
 	border-bottom: 1px solid #ddd;
+	width: 100%;
+	background: #fff;
+	padding: 0;
+	text-align: center;
+
 
 	h1#site-title, div#site-title {
 		font-size: 2em;
 		margin: 0.8em 0;
 	}
+
+	#wrap {
+		max-width: $content-width;
+		margin: 0px auto;
+		text-align: left;
+		position: relative;
+	}	
 
 	#nav_button {
 		display: none;
@@ -70,6 +82,8 @@ header {
 	}
 }
 
+
+
 /* Nav */
 
 nav {
@@ -88,7 +102,7 @@ nav {
 	}
 }
 
-header, article {
+header #wrap, article {
 	max-width: $content-width;
 	margin-left: auto;
 	margin-right: auto;
