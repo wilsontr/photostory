@@ -53,16 +53,6 @@ article h1.entry-title {
 }
 
 /* line 45, sass/_main.scss */
-.gallery {
-  text-align: center;
-  width: 100%;
-}
-/* line 49, sass/_main.scss */
-.gallery .gallery-image {
-  margin: 0px auto 50px;
-}
-
-/* line 54, sass/_main.scss */
 footer {
   text-align: center;
   font-size: 0.8em;
@@ -71,12 +61,12 @@ footer {
 
 /* Mobile */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* line 66, sass/_main.scss */
+  /* line 57, sass/_main.scss */
   html {
     margin-top: 50px;
   }
 
-  /* line 71, sass/_main.scss */
+  /* line 62, sass/_main.scss */
   #river .album-post {
     margin: 0px 0px 10px;
   }
@@ -339,14 +329,24 @@ article h1 {
   margin: 0 0 0.67em;
 }
 
-/* line 28, sass/_album.scss */
+/* line 27, sass/_album.scss */
+.gallery {
+  text-align: center;
+  width: 100%;
+}
+/* line 31, sass/_album.scss */
+.gallery .gallery-image {
+  margin: 0px auto 100px;
+}
+
+/* line 37, sass/_album.scss */
 .social-links-single {
   position: relative;
   float: right;
   display: inline-block;
   text-align: right;
 }
-/* line 34, sass/_album.scss */
+/* line 43, sass/_album.scss */
 .social-links-single .social-links-share-button {
   position: absolute;
   color: #999;
@@ -360,7 +360,7 @@ article h1 {
   transition: opacity 300ms;
   z-index: 1;
 }
-/* line 45, sass/_album.scss */
+/* line 54, sass/_album.scss */
 .social-links-single .social-links-block {
   font-family: 'Socialglyphs-Regular', sans-serif;
   text-transform: none;
@@ -373,21 +373,21 @@ article h1 {
   z-index: 50;
   position: relative;
 }
-/* line 54, sass/_album.scss */
+/* line 63, sass/_album.scss */
 .social-links-single .social-links-block li {
   display: inline-block;
   vertical-align: top;
   text-align: center;
 }
-/* line 59, sass/_album.scss */
+/* line 68, sass/_album.scss */
 .social-links-single .social-links-block li a {
   display: inline-block;
 }
-/* line 67, sass/_album.scss */
+/* line 76, sass/_album.scss */
 .social-links-single:hover .social-links-share-button {
   opacity: 0;
 }
-/* line 71, sass/_album.scss */
+/* line 80, sass/_album.scss */
 .social-links-single:hover .social-links-block {
   opacity: 1;
 }
