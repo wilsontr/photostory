@@ -13,25 +13,37 @@ function photostory_scripts() {
 
 ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+
+	
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
 	 */
 	global $page, $paged;
 
-	wp_title( '|', true, 'right' );
+	$title = wp_title( '|', false, 'right' );
 
 	// Add the blog name.
-	bloginfo( 'name' );
+	$title .= get_bloginfo( 'name' );
 
 	// Add the blog description for the home/front page.
 	$site_description = get_bloginfo( 'description', 'display' );
 	if ( $site_description && ( is_home() || is_front_page() ) ) {
-		echo " | $site_description ";
+		$title .=  " | $site_description ";
 	}
 
+	echo($title);
 
 	?></title>
+<meta property="og:title" content="<?php echo($title); ?>"/>
+<meta property="og:url" content="<?php echo(get_permalink()); ?>"/>
+<?php 
+	if ( is_single() && get_post_thumbnail_id($post->ID) ) {
+		$featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); 
+?>
+<meta property="og:image" content="<?php echo($featured_image_url); ?>"/>
+<?php } ?>
+
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.2.1/base-min.css">

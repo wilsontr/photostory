@@ -15,9 +15,11 @@ function single_album_scripts() {
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 				
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		
 		<?php get_template_part('single-social'); ?>
 
 		<h1 class="entry-title"><?php the_title(); ?></h1>
+
 		
 		<div class="entry-meta">
 		</div><!-- .entry-meta -->
@@ -27,6 +29,8 @@ function single_album_scripts() {
 			<?php the_content(); ?>
 
 		</div><!-- .entry-content -->
+
+		<?php get_template_part('single-social'); ?>
 
 	</article><!-- #post-## -->
 
