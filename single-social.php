@@ -2,7 +2,8 @@
 	<div class="social-links-share-button">Share</div>
 	<ul class="social-links-block">
 		<?php 
-		$featured_image_url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); 
+		$featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'gallery-full' ); 
+		$featured_image_url = $featured_image[0];
 		$permalink = get_permalink($post->ID);
 		?>
 		<li class="share-facebook">
