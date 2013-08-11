@@ -22,7 +22,7 @@ function photostory_custom_sizes($sizes) {
 
 add_filter('post_gallery', 'photostory_gallery');
 
-function photostory_gallery($output, $attr) {
+function photostory_gallery($output) {
 
     global $post;
 

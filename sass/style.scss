@@ -5,7 +5,10 @@ Author URI: http://trevorwilsonphoto.com
 Version: 0.1
 */
 
+$content-width: 1200px;
+
 @import "compass/css3";
 @import "_main";
+@import "_album_list";
 @import "_fonts";
 /* @import "_black"; */
