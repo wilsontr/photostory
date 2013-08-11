@@ -50,7 +50,7 @@ header {
 
 	#site-social {
 		position: absolute;
-		right: 0px;
+		right: 10px;
 		top: 30px;
 		font-family: 'Socialglyphs-Regular', sans-serif;
 		text-transform: none;
@@ -113,81 +113,10 @@ article {
 	}
 }
 
-#river {
-	text-transform: uppercase;
-
-	.album-post {
-		display: inline-block;
-		
-		h3 {
-			margin: 0.25em;
-		}
-	}
-}
-
 footer {
 	text-align: center;
 	font-size: 0.8em;
 	margin-top: 20px;
-}
-
-/* Desktop only */
-
-@media only screen and (min-width: 480px) {
-
-	body.home {
-		margin-top: 140px;
-		
-		header {
-			max-width: none;
-			margin: 0;
-			top: 0;
-			width: 100%;
-			position: fixed;
-			background: #fff;
-			border-bottom: none;
-			padding: 0;
-			text-align: center;
-
-			#wrap {
-				max-width: $content-width;
-				margin: 0px auto;
-				text-align: left;
-				position: relative;
-
-				#site-title, nav  {
-					margin-left: 10px;
-				}
-
-				#site-social {
-					right: 10px;
-				}
-			}
-		}
-
-		#river {
-			white-space: nowrap;
-
-			.album-post {
-				margin: 0px 10px;
-				display: inline-block;
-				vertical-align: top;
-			}
-
-			a {
-				display: inline-block;
-			}
-
-		}
-
-		footer {
-			position: fixed;
-			width: 100%;
-			bottom: 0;
-			background: #fff;
-		}
-
-	}	
 }
 
 /* Mobile */

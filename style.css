@@ -63,7 +63,7 @@ header #nav_button {
 /* line 51, sass/_main.scss */
 header #site-social {
   position: absolute;
-  right: 0px;
+  right: 10px;
   top: 30px;
   font-family: 'Socialglyphs-Regular', sans-serif;
   text-transform: none;
@@ -123,32 +123,113 @@ article h1.entry-title {
 }
 
 /* line 116, sass/_main.scss */
-#river {
-  text-transform: uppercase;
-}
-/* line 119, sass/_main.scss */
-#river .album-post {
-  display: inline-block;
-}
-/* line 122, sass/_main.scss */
-#river .album-post h3 {
-  margin: 0.25em;
-}
-
-/* line 128, sass/_main.scss */
 footer {
   text-align: center;
   font-size: 0.8em;
   margin-top: 20px;
 }
 
+/* Mobile */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* line 128, sass/_main.scss */
+  html {
+    margin-top: 50px;
+  }
+
+  /* line 132, sass/_main.scss */
+  header {
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  /* line 139, sass/_main.scss */
+  header #top-row {
+    background: #fff;
+    padding: 10px;
+  }
+  /* line 143, sass/_main.scss */
+  header #top-row #site-title {
+    font-size: 1.5em;
+    margin: 5px 0 0 0;
+  }
+  /* line 149, sass/_main.scss */
+  header #nav_button {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 19px;
+    color: #222;
+    font-size: 1.5em;
+    line-height: 1em;
+    cursor: pointer;
+  }
+  /* line 161, sass/_main.scss */
+  header #site-social {
+    display: none;
+  }
+
+  /* line 166, sass/_main.scss */
+  nav {
+    background: #fff;
+    width: 100%;
+    max-height: 0;
+    height: auto;
+    transition: 200ms all;
+    overflow: hidden;
+    box-shadow: 0px 2px 3px #777;
+  }
+  /* line 175, sass/_main.scss */
+  nav.visible {
+    max-height: 150px;
+  }
+  /* line 179, sass/_main.scss */
+  nav ul {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    margin: 0;
+  }
+  /* line 184, sass/_main.scss */
+  nav ul li {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin: 0;
+  }
+  /* line 189, sass/_main.scss */
+  nav ul li a {
+    padding: 10px 0px;
+    display: block;
+    /* font-weight: bold; */
+    text-align: center;
+  }
+
+  /* line 200, sass/_main.scss */
+  #river .album-post {
+    margin: 0px 0px 10px;
+  }
+}
+/* Homepage */
+/* line 4, sass/_home.scss */
+#river {
+  text-transform: uppercase;
+}
+/* line 7, sass/_home.scss */
+#river .album-post {
+  display: inline-block;
+}
+/* line 10, sass/_home.scss */
+#river .album-post h3 {
+  margin: 0.25em;
+}
+
 /* Desktop only */
 @media only screen and (min-width: 480px) {
-  /* line 138, sass/_main.scss */
+  /* line 20, sass/_home.scss */
   body.home {
     margin-top: 140px;
   }
-  /* line 141, sass/_main.scss */
+  /* line 23, sass/_home.scss */
   body.home header {
     max-width: none;
     margin: 0;
@@ -160,121 +241,33 @@ footer {
     padding: 0;
     text-align: center;
   }
-  /* line 152, sass/_main.scss */
+  /* line 34, sass/_home.scss */
   body.home header #wrap {
     max-width: 1200px;
     margin: 0px auto;
     text-align: left;
     position: relative;
   }
-  /* line 158, sass/_main.scss */
-  body.home header #wrap #site-title, body.home header #wrap nav {
-    margin-left: 10px;
-  }
-  /* line 162, sass/_main.scss */
-  body.home header #wrap #site-social {
-    right: 10px;
-  }
-  /* line 168, sass/_main.scss */
+  /* line 47, sass/_home.scss */
   body.home #river {
     white-space: nowrap;
   }
-  /* line 171, sass/_main.scss */
+  /* line 50, sass/_home.scss */
   body.home #river .album-post {
     margin: 0px 10px;
     display: inline-block;
     vertical-align: top;
   }
-  /* line 177, sass/_main.scss */
+  /* line 56, sass/_home.scss */
   body.home #river a {
     display: inline-block;
   }
-  /* line 183, sass/_main.scss */
+  /* line 62, sass/_home.scss */
   body.home footer {
     position: fixed;
     width: 100%;
     bottom: 0;
     background: #fff;
-  }
-}
-/* Mobile */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* line 199, sass/_main.scss */
-  html {
-    margin-top: 50px;
-  }
-
-  /* line 203, sass/_main.scss */
-  header {
-    position: fixed;
-    padding: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  /* line 210, sass/_main.scss */
-  header #top-row {
-    background: #fff;
-    padding: 10px;
-  }
-  /* line 214, sass/_main.scss */
-  header #top-row #site-title {
-    font-size: 1.5em;
-    margin: 5px 0 0 0;
-  }
-  /* line 220, sass/_main.scss */
-  header #nav_button {
-    display: inline-block;
-    position: absolute;
-    right: 10px;
-    top: 19px;
-    color: #222;
-    font-size: 1.5em;
-    line-height: 1em;
-    cursor: pointer;
-  }
-  /* line 232, sass/_main.scss */
-  header #site-social {
-    display: none;
-  }
-
-  /* line 237, sass/_main.scss */
-  nav {
-    background: #fff;
-    width: 100%;
-    max-height: 0;
-    height: auto;
-    transition: 200ms all;
-    overflow: hidden;
-    box-shadow: 0px 2px 3px #777;
-  }
-  /* line 246, sass/_main.scss */
-  nav.visible {
-    max-height: 150px;
-  }
-  /* line 250, sass/_main.scss */
-  nav ul {
-    width: 100%;
-    border-top: 1px solid #ddd;
-    margin: 0;
-  }
-  /* line 255, sass/_main.scss */
-  nav ul li {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    margin: 0;
-  }
-  /* line 260, sass/_main.scss */
-  nav ul li a {
-    padding: 10px 0px;
-    display: block;
-    /* font-weight: bold; */
-    text-align: center;
-  }
-
-  /* line 271, sass/_main.scss */
-  #river .album-post {
-    margin: 0px 0px 10px;
   }
 }
 /* Album list */
@@ -293,6 +286,11 @@ footer {
 #album-list .single-album .post-link h3 {
   font-size: 1em;
   margin: 0;
+}
+
+/* line 21, sass/_album_list.scss */
+.page-template-albums-php header {
+  border-bottom: none;
 }
 
 @font-face {
