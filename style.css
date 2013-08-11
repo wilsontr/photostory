@@ -287,16 +287,12 @@ footer {
 /* line 8, sass/_album_list.scss */
 #album-list .single-album {
   display: inline-block;
-  margin: 0px 10px;
+  margin: 0px 16px 8px;
 }
-/* line 12, sass/_album_list.scss */
-#album-list .single-album img {
-  width: 378px;
-}
-/* line 17, sass/_album_list.scss */
+/* line 13, sass/_album_list.scss */
 #album-list .single-album .post-link h3 {
   font-size: 1em;
-  margin: 0 0 1em;
+  margin: 0;
 }
 
 @font-face {

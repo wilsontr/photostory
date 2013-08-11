@@ -20,7 +20,7 @@ $query = new WP_Query($attrs);
 $posts = $query->get_posts();
 
 foreach ( $posts as $post ) {
-	$post_img = get_the_post_thumbnail($post->ID, 'home-gallery');
+	$post_img = get_the_post_thumbnail($post->ID, 'album-list');
 	$permalink = get_permalink($post->ID);
 	?>
 	<div class="single-album">

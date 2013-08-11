@@ -5,6 +5,7 @@
 add_theme_support('post-thumbnails');
 add_image_size('gallery-full', 1280, 800, false);
 add_image_size('home-gallery', 975, 650, false);
+add_image_size('album-list', 365, 243, false);
 add_filter('image_size_names_choose', 'photostory_custom_sizes');
 add_filter('show_admin_bar', '__return_false');  
 add_filter('post_comments_feed_link','photostory_remove_comments_rss');
