@@ -124,7 +124,8 @@ function photostory_gallery($output, $attr) {
         $image_url = $gallery_image[0];
     	//$full_image = wp_get_attachment_image_src( $id, 'full' ); 
         //$full_image_url = $full_image[0];
-        $full_image_url = str_replace(".jpg", "@2x.jpg", $image_url);
+        //$full_image_url = str_replace(".jpg", "@2x.jpg", $image_url);
+        $full_image_url = $image_url;
         $out .= '<div class="gallery-image"><img src="' . $image_url . '" rel="' . $full_image_url . '"/></div>';
     }
     $out .= '</div>';

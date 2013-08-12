@@ -14,12 +14,13 @@
 						enableMouseWheel: false, 
 						enableKeyboard: false,
 						captionAndToolbarShowEmptyCaptions: false,
-						captionAndToolbarHide: true,
+						captionAndToolbarHide: false,
 						getImageSource: function(el){ 
 							return el.getAttribute('rel'); 
 						}
 					} ); 
 
+				/*
 				myPhotoSwipe.addEventHandler(PhotoSwipe.EventTypes.onTouch, function(e){
 					if ( e.action == 'tap' ) {
 						e.preventDefault();
@@ -27,6 +28,7 @@
 						myPhotoSwipe.hide();
 					}
 				});
+				*/
 		}, false); 		
 	}
 
