@@ -12,7 +12,7 @@ function single_album_scripts() {
 
 
 add_filter('body_class', 'album_class_names');
-function my_class_names($classes) {
+function album_class_names($classes) {
 	
 	$classes[] = 'content';
 	// return the $classes array
