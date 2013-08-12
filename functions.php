@@ -6,7 +6,7 @@
 add_theme_support('post-thumbnails');
 add_image_size('gallery-full', 1280, 800, false);
 add_image_size('home-gallery', 975, 650, false);
-add_image_size('album-list', 365, 243, false);
+add_image_size('album-list', 365, 548, false);
 
 
 /* Disable WP admin bar */
@@ -122,9 +122,10 @@ function photostory_gallery($output, $attr) {
     foreach ( $attachments as $id => $image_post ) {
         $gallery_image = wp_get_attachment_image_src( $id, 'gallery-full' ); 
         $image_url = $gallery_image[0];
-    	$full_image = wp_get_attachment_image_src( $id, 'full' ); 
-        $full_image_url = $full_image[0];
-    	$out .= '<div class="gallery-image"><img src="' . $image_url . '" rel="' . $full_image_url . '"/></div>';
+    	//$full_image = wp_get_attachment_image_src( $id, 'full' ); 
+        //$full_image_url = $full_image[0];
+        $full_image_url = str_replace(".jpg", "@2x.jpg", $image_url);
+        $out .= '<div class="gallery-image"><img src="' . $image_url . '" rel="' . $full_image_url . '"/></div>';
     }
     $out .= '</div>';
 

@@ -22,6 +22,8 @@
 
 				myPhotoSwipe.addEventHandler(PhotoSwipe.EventTypes.onTouch, function(e){
 					if ( e.action == 'tap' ) {
+						e.preventDefault();
+						e.stopPropagation();
 						myPhotoSwipe.hide();
 					}
 				});

@@ -261,7 +261,7 @@ header #wrap {
 @media only screen and (min-width: 480px), only screen and (min-device-width: 480px) {
   /* line 21, sass/_home.scss */
   body.home {
-    margin-top: 140px;
+    margin-top: 110px;
   }
   /* line 24, sass/_home.scss */
   body.home header {
