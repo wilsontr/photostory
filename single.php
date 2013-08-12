@@ -4,10 +4,12 @@ add_action( 'wp_enqueue_scripts', 'single_album_scripts' );
 
 function single_album_scripts() {
 	wp_enqueue_script('tumblr-share', "http://platform.tumblr.com/v1/share.js", null, null, true);
-	wp_enqueue_script('klass', get_bloginfo('stylesheet_directory') . "/js/lib/klass.min.js", 'jquery', null, true);
+	
+	/*wp_enqueue_script('klass', get_bloginfo('stylesheet_directory') . "/js/lib/klass.min.js", 'jquery', null, true);
 	wp_enqueue_script('photoswipe', get_bloginfo('stylesheet_directory') . "/js/lib/code.photoswipe-3.0.5.min.js", array('klass'), null, true);
 	wp_enqueue_script('album', get_bloginfo('stylesheet_directory') . "/js/album.js", array('jquery', 'klass', 'photoswipe'), null, true);
 	wp_enqueue_style('photoswipe', get_bloginfo('stylesheet_directory') . '/css/photoswipe.css');
+	*/
 }
 
 
