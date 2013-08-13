@@ -53,3 +53,30 @@
 
 	}	
 }
+
+@media only screen and (min-width : 320px) and (max-width : 480px),
+	only screen and ( min-device-width: 320px ) and ( max-device-width: 480px ) { 
+
+	body.home {
+		margin-top: 0;
+		
+		#river {
+			white-space: wrap;
+
+			a {
+				display: inline;
+			}
+
+			.album-post {
+				display: block;
+				margin: 0;
+
+				img {
+					max-width: 100%;
+					height: auto;
+				}
+			}
+		}		
+	}
+
+}

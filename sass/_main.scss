@@ -40,6 +40,12 @@ article {
 	}
 
 	padding: 10px;
+
+	&.text {
+		a {
+			text-decoration: underline;
+		}
+	}
 }
 
 footer {
@@ -70,6 +76,11 @@ footer {
 
 	footer {
 		margin-top: 50px;
+	}
+
+	article.text {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 
