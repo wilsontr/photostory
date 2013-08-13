@@ -69,6 +69,34 @@ function photostory_customize_register($wp_customize) {
         'settings'   => 'ga_id',
     ) ) );
 
+    $wp_customize->add_section('photostory_access', array(
+        'title'    => __('Access Control', 'photostory'),
+        'priority' => 32
+    ));
+
+    $wp_customize->add_setting('redirect_public', array(
+        'default' => '',
+        'transport' => 'refresh'
+    ));
+
+    $wp_customize->add_control( 'redirect_public', array(
+        'type' => 'checkbox',
+        'label' => 'Redirect logged-out users',
+        'section' => 'photostory_access'
+        ));
+
+    $wp_customize->add_setting('redirect_url', array(
+        'default' => '',
+        'transport' => 'refresh'
+    ));
+
+   $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'redirect_url', array(
+        'label'        => __( 'Redirect URL', 'photostory' ),
+        'section'    => 'photostory_access',
+        'settings'   => 'redirect_url',
+    ) ) );    
+
+
 }
 
 /* Disable comments RSS feed */

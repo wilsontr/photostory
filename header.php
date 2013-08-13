@@ -1,3 +1,9 @@
+<?php 
+if ( get_theme_mod('redirect_public') && get_theme_mod('redirect_url') && !is_user_logged_in() ) {
+	header('Location: ' . get_theme_mod('redirect_url'));
+}
+
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
