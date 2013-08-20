@@ -26,7 +26,7 @@
 			<?php endif; ?>t</a>
 		</li>
 		<li class="share-tumblr">
-			<?php $caption = '<p><a href="' . $permalink . '">' . $post->post_title . "</a>, a photo album on " . get_bloginfo('name') . '</p>'; ?>
+			<?php $caption = '<p><a href="' . $permalink . '">' . $post->post_title . '</a> on <a href="' . $permalink  . '">' . get_bloginfo('name') . '</a></p>'; ?>
 			<!--<a href="http://www.tumblr.com/share/photo?source=<?php echo(urlencode($featured_image_url)); ?>&caption=%3Cp%3E%3Cstrong%3E%3Ca href=&quot;<?php echo(urlencode($permalink)); ?>&quot; title=&quot;<?php echo(urlencode($post->post_title)); ?>&quot;%3E<?php echo(urlencode($post->post_title)); ?>%3C/a%3E%2C%20a%20photo%20series%20on%20Scant%20Condolences%3C%2Fstrong%3E%3C%2Fp%3E%3Cp%2Fp%3E&click_thru=<?php echo(urlencode($permalink)); ?>" title="Share <?php echo(urlencode($post->post_title)); ?> on Tumblr">u</a>-->
 			<a href="http://www.tumblr.com/share/photo?source=<?php echo(urlencode($featured_image_url)); ?>&caption=<?php echo(urlencode($caption)); ?>	&click_thru=<?php echo(urlencode($permalink)); ?>" class="share-tumblr" title="Share on Tumblr">u</a>
 		</li> 

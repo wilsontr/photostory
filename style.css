@@ -5,41 +5,41 @@ Author URI: http://trevorwilsonphoto.com
 Version: 0.1
 */
 /* Main styles */
-/* line 3, sass/_main.scss */
+/* line 3, /Users/wilsontr/git/photostory/sass/_main.scss */
 body {
   color: #333;
   font-family: 'Linden Hill', serif;
   text-transform: uppercase;
 }
 
-/* line 9, sass/_main.scss */
+/* line 9, /Users/wilsontr/git/photostory/sass/_main.scss */
 a {
   color: #111;
   text-decoration: none;
 }
-/* line 12, sass/_main.scss */
+/* line 12, /Users/wilsontr/git/photostory/sass/_main.scss */
 a:hover {
   color: #444;
 }
 
-/* line 17, sass/_main.scss */
+/* line 17, /Users/wilsontr/git/photostory/sass/_main.scss */
 ul, li {
   list-style-type: none;
   margin: 0;
 }
 
-/* line 22, sass/_main.scss */
+/* line 22, /Users/wilsontr/git/photostory/sass/_main.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 27, sass/_main.scss */
+/* line 27, /Users/wilsontr/git/photostory/sass/_main.scss */
 h1, h2, h3, h4, h5 {
   font-weight: normal;
 }
 
-/* line 32, sass/_main.scss */
+/* line 32, /Users/wilsontr/git/photostory/sass/_main.scss */
 article {
   max-width: 1200px;
   margin-left: auto;
@@ -47,16 +47,16 @@ article {
   text-transform: uppercase;
   padding: 10px;
 }
-/* line 38, sass/_main.scss */
+/* line 38, /Users/wilsontr/git/photostory/sass/_main.scss */
 article h1.entry-title {
   font-size: 2.3em;
 }
-/* line 45, sass/_main.scss */
+/* line 45, /Users/wilsontr/git/photostory/sass/_main.scss */
 article.text a {
   text-decoration: underline;
 }
 
-/* line 51, sass/_main.scss */
+/* line 51, /Users/wilsontr/git/photostory/sass/_main.scss */
 footer {
   text-align: center;
   font-size: 0.8em;
@@ -65,29 +65,29 @@ footer {
 
 /* Mobile */
 @media only screen and (min-width: 320px) and (max-width: 480px), only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 62, sass/_main.scss */
+  /* line 62, /Users/wilsontr/git/photostory/sass/_main.scss */
   html {
     margin-top: 2.5em;
   }
 
-  /* line 71, sass/_main.scss */
+  /* line 71, /Users/wilsontr/git/photostory/sass/_main.scss */
   #river .album-post {
     margin: 0px 0px 10px;
   }
 
-  /* line 77, sass/_main.scss */
+  /* line 77, /Users/wilsontr/git/photostory/sass/_main.scss */
   footer {
     margin-top: 50px;
   }
 
-  /* line 81, sass/_main.scss */
+  /* line 81, /Users/wilsontr/git/photostory/sass/_main.scss */
   article.text {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 /* Header */
-/* line 3, sass/_header.scss */
+/* line 3, /Users/wilsontr/git/photostory/sass/_header.scss */
 header {
   position: relative;
   margin-bottom: 10px;
@@ -96,16 +96,16 @@ header {
   padding: 0;
   text-align: center;
 }
-/* line 12, sass/_header.scss */
+/* line 12, /Users/wilsontr/git/photostory/sass/_header.scss */
 header h1#site-title, header div#site-title {
   font-size: 2em;
   margin: 0.8em 0;
 }
-/* line 16, sass/_header.scss */
+/* line 16, /Users/wilsontr/git/photostory/sass/_header.scss */
 header h1#site-title .subtitle, header div#site-title .subtitle {
   font-size: 1em;
 }
-/* line 21, sass/_header.scss */
+/* line 21, /Users/wilsontr/git/photostory/sass/_header.scss */
 header #wrap {
   max-width: 1200px;
   margin: 0px auto;
@@ -114,11 +114,11 @@ header #wrap {
   border-bottom: 1px solid #ddd;
   padding: 0px 10px;
 }
-/* line 30, sass/_header.scss */
+/* line 30, /Users/wilsontr/git/photostory/sass/_header.scss */
 header #nav_button {
   display: none;
 }
-/* line 34, sass/_header.scss */
+/* line 34, /Users/wilsontr/git/photostory/sass/_header.scss */
 header #site-social {
   position: absolute;
   right: 10px;
@@ -127,17 +127,17 @@ header #site-social {
   text-transform: none;
   font-size: 1.5em;
 }
-/* line 42, sass/_header.scss */
+/* line 42, /Users/wilsontr/git/photostory/sass/_header.scss */
 header #site-social li {
   display: inline-block;
   width: 0.7em;
   vertical-align: top;
 }
-/* line 47, sass/_header.scss */
+/* line 47, /Users/wilsontr/git/photostory/sass/_header.scss */
 header #site-social li.email {
   padding-top: 2px;
 }
-/* line 54, sass/_header.scss */
+/* line 54, /Users/wilsontr/git/photostory/sass/_header.scss */
 header #subtitle {
   position: absolute;
   display: inline-block;
@@ -146,21 +146,21 @@ header #subtitle {
 }
 
 /* Nav */
-/* line 67, sass/_header.scss */
+/* line 67, /Users/wilsontr/git/photostory/sass/_header.scss */
 nav ul {
   padding: 0px;
 }
-/* line 70, sass/_header.scss */
+/* line 70, /Users/wilsontr/git/photostory/sass/_header.scss */
 nav ul li {
   display: inline-block;
   margin-right: 10px;
 }
-/* line 74, sass/_header.scss */
+/* line 74, /Users/wilsontr/git/photostory/sass/_header.scss */
 nav ul li a {
   display: inline-block;
 }
 
-/* line 82, sass/_header.scss */
+/* line 82, /Users/wilsontr/git/photostory/sass/_header.scss */
 header #wrap {
   max-width: 1200px;
   margin-left: auto;
@@ -168,14 +168,14 @@ header #wrap {
 }
 
 @media only screen and (max-width: 650px), only screen and (max-device-width: 650px) {
-  /* line 90, sass/_header.scss */
+  /* line 90, /Users/wilsontr/git/photostory/sass/_header.scss */
   header #subtitle {
     display: none;
   }
 }
 /* Mobile */
 @media only screen and (min-width: 320px) and (max-width: 480px), only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 100, sass/_header.scss */
+  /* line 100, /Users/wilsontr/git/photostory/sass/_header.scss */
   header {
     position: fixed;
     padding: 0;
@@ -187,17 +187,17 @@ header #wrap {
     -moz-box-shadow: 0px 1px 2px #cccccc;
     box-shadow: 0px 1px 2px #cccccc;
   }
-  /* line 109, sass/_header.scss */
+  /* line 109, /Users/wilsontr/git/photostory/sass/_header.scss */
   header #top-row {
     background: #fff;
     padding: 0;
   }
-  /* line 113, sass/_header.scss */
+  /* line 113, /Users/wilsontr/git/photostory/sass/_header.scss */
   header #top-row #site-title {
     font-size: 1.5em;
     margin: 0.4em 0 0 0;
   }
-  /* line 119, sass/_header.scss */
+  /* line 119, /Users/wilsontr/git/photostory/sass/_header.scss */
   header #nav_button {
     display: inline-block;
     position: absolute;
@@ -208,16 +208,16 @@ header #wrap {
     line-height: 1em;
     cursor: pointer;
   }
-  /* line 131, sass/_header.scss */
+  /* line 131, /Users/wilsontr/git/photostory/sass/_header.scss */
   header #site-social {
     display: none;
   }
-  /* line 135, sass/_header.scss */
+  /* line 135, /Users/wilsontr/git/photostory/sass/_header.scss */
   header #subtitle {
     display: none;
   }
 
-  /* line 141, sass/_header.scss */
+  /* line 141, /Users/wilsontr/git/photostory/sass/_header.scss */
   nav {
     background: #fff;
     width: 100%;
@@ -229,23 +229,23 @@ header #wrap {
     transition: 300ms opacity;
     overflow: hidden;
   }
-  /* line 150, sass/_header.scss */
+  /* line 150, /Users/wilsontr/git/photostory/sass/_header.scss */
   nav.visible {
     max-height: 265px;
   }
-  /* line 154, sass/_header.scss */
+  /* line 154, /Users/wilsontr/git/photostory/sass/_header.scss */
   nav ul {
     width: 100%;
     border-top: 1px solid #ddd;
     margin: 0;
   }
-  /* line 159, sass/_header.scss */
+  /* line 159, /Users/wilsontr/git/photostory/sass/_header.scss */
   nav ul li {
     border-bottom: 1px solid #ddd;
     display: block;
     margin: 0;
   }
-  /* line 164, sass/_header.scss */
+  /* line 164, /Users/wilsontr/git/photostory/sass/_header.scss */
   nav ul li a {
     padding: 10px 0px;
     display: block;
@@ -254,26 +254,26 @@ header #wrap {
   }
 }
 /* Homepage */
-/* line 4, sass/_home.scss */
+/* line 4, /Users/wilsontr/git/photostory/sass/_home.scss */
 #river {
   text-transform: uppercase;
 }
-/* line 7, sass/_home.scss */
+/* line 7, /Users/wilsontr/git/photostory/sass/_home.scss */
 #river .album-post {
   display: inline-block;
 }
-/* line 10, sass/_home.scss */
+/* line 10, /Users/wilsontr/git/photostory/sass/_home.scss */
 #river .album-post h3 {
   margin: 0.25em;
 }
 
 /* Desktop only */
 @media only screen and (min-width: 480px), only screen and (min-device-width: 480px) {
-  /* line 21, sass/_home.scss */
+  /* line 21, /Users/wilsontr/git/photostory/sass/_home.scss */
   body.home {
     margin-top: 110px;
   }
-  /* line 24, sass/_home.scss */
+  /* line 24, /Users/wilsontr/git/photostory/sass/_home.scss */
   body.home header {
     max-width: none;
     margin: 0;
@@ -281,21 +281,21 @@ header #wrap {
     position: fixed;
     border-bottom: none;
   }
-  /* line 32, sass/_home.scss */
+  /* line 32, /Users/wilsontr/git/photostory/sass/_home.scss */
   body.home #river {
     white-space: nowrap;
   }
-  /* line 35, sass/_home.scss */
+  /* line 35, /Users/wilsontr/git/photostory/sass/_home.scss */
   body.home #river .album-post {
     margin: 0px 10px;
     display: inline-block;
     vertical-align: top;
   }
-  /* line 41, sass/_home.scss */
+  /* line 41, /Users/wilsontr/git/photostory/sass/_home.scss */
   body.home #river a {
     display: inline-block;
   }
-  /* line 47, sass/_home.scss */
+  /* line 47, /Users/wilsontr/git/photostory/sass/_home.scss */
   body.home footer {
     position: fixed;
     width: 100%;
@@ -304,105 +304,109 @@ header #wrap {
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px), only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 60, sass/_home.scss */
+  /* line 60, /Users/wilsontr/git/photostory/sass/_home.scss */
   body.home {
     margin-top: 0;
   }
-  /* line 63, sass/_home.scss */
+  /* line 63, /Users/wilsontr/git/photostory/sass/_home.scss */
   body.home #river {
     white-space: wrap;
   }
-  /* line 66, sass/_home.scss */
+  /* line 66, /Users/wilsontr/git/photostory/sass/_home.scss */
   body.home #river a {
     display: inline;
   }
-  /* line 70, sass/_home.scss */
+  /* line 70, /Users/wilsontr/git/photostory/sass/_home.scss */
   body.home #river .album-post {
     display: block;
     margin: 0;
   }
-  /* line 74, sass/_home.scss */
+  /* line 74, /Users/wilsontr/git/photostory/sass/_home.scss */
   body.home #river .album-post img {
     max-width: 100%;
     height: auto;
   }
 }
 /* Album list */
-/* line 3, sass/_album_list.scss */
+/* line 3, /Users/wilsontr/git/photostory/sass/_album_list.scss */
 #album-list {
   max-width: 1200px;
   margin: 0px auto;
   text-transform: uppercase;
 }
-/* line 8, sass/_album_list.scss */
+/* line 8, /Users/wilsontr/git/photostory/sass/_album_list.scss */
 #album-list .single-album {
   display: inline-block;
   margin: 0px 16px 8px;
 }
-/* line 13, sass/_album_list.scss */
+/* line 13, /Users/wilsontr/git/photostory/sass/_album_list.scss */
 #album-list .single-album .post-link h3 {
   font-size: 1em;
   margin: 0;
 }
 
-/* line 21, sass/_album_list.scss */
+/* line 21, /Users/wilsontr/git/photostory/sass/_album_list.scss */
 .page-template-albums-php header #wrap {
   border-bottom: none;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px), only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 29, sass/_album_list.scss */
+  /* line 29, /Users/wilsontr/git/photostory/sass/_album_list.scss */
   #album-list .single-album {
     margin: 0px 0 8px;
   }
-  /* line 32, sass/_album_list.scss */
+  /* line 32, /Users/wilsontr/git/photostory/sass/_album_list.scss */
   #album-list .single-album .post-link {
     padding-left: 8px;
   }
 }
 /* Album page */
-/* line 5, sass/_album.scss */
+/* line 5, /Users/wilsontr/git/photostory/sass/_album.scss */
 .single-post header #site-social {
   opacity: 0;
   transition: 200ms all;
 }
-/* line 11, sass/_album.scss */
+/* line 11, /Users/wilsontr/git/photostory/sass/_album.scss */
 .single-post header:hover #site-social {
   opacity: 1;
 }
+/* line 17, /Users/wilsontr/git/photostory/sass/_album.scss */
+.single-post p {
+  text-align: center;
+}
 
-/* line 18, sass/_album.scss */
+/* line 22, /Users/wilsontr/git/photostory/sass/_album.scss */
 article {
   position: relative;
   padding-top: 1.67em;
 }
-/* line 22, sass/_album.scss */
+/* line 26, /Users/wilsontr/git/photostory/sass/_album.scss */
 article h1 {
   margin: 0 0 0.67em;
 }
 
-/* line 27, sass/_album.scss */
+/* line 31, /Users/wilsontr/git/photostory/sass/_album.scss */
 .gallery {
   text-align: center;
   width: 100%;
 }
-/* line 31, sass/_album.scss */
+/* line 35, /Users/wilsontr/git/photostory/sass/_album.scss */
 .gallery .gallery-image {
   margin: 0px auto 100px;
 }
-/* line 34, sass/_album.scss */
+/* line 38, /Users/wilsontr/git/photostory/sass/_album.scss */
 .gallery .gallery-image:last-child {
   margin-bottom: 0;
 }
 
-/* line 43, sass/_album.scss */
+/* line 47, /Users/wilsontr/git/photostory/sass/_album.scss */
 .social-links-single {
   position: relative;
   float: right;
   display: inline-block;
   text-align: right;
 }
-/* line 49, sass/_album.scss */
+/* line 53, /Users/wilsontr/git/photostory/sass/_album.scss */
 .social-links-single .social-links-share-button {
   position: absolute;
   color: #999;
@@ -416,7 +420,7 @@ article h1 {
   transition: opacity 300ms;
   z-index: 1;
 }
-/* line 60, sass/_album.scss */
+/* line 64, /Users/wilsontr/git/photostory/sass/_album.scss */
 .social-links-single .social-links-block {
   font-family: 'Socialglyphs-Regular', sans-serif;
   text-transform: none;
@@ -429,59 +433,59 @@ article h1 {
   z-index: 50;
   position: relative;
 }
-/* line 69, sass/_album.scss */
+/* line 73, /Users/wilsontr/git/photostory/sass/_album.scss */
 .social-links-single .social-links-block li {
   display: inline-block;
   vertical-align: top;
   text-align: center;
 }
-/* line 74, sass/_album.scss */
+/* line 78, /Users/wilsontr/git/photostory/sass/_album.scss */
 .social-links-single .social-links-block li a {
   display: inline-block;
 }
-/* line 82, sass/_album.scss */
+/* line 86, /Users/wilsontr/git/photostory/sass/_album.scss */
 .social-links-single:hover .social-links-share-button {
   opacity: 0;
 }
-/* line 86, sass/_album.scss */
+/* line 90, /Users/wilsontr/git/photostory/sass/_album.scss */
 .social-links-single:hover .social-links-block {
   opacity: 1;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px), only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 95, sass/_album.scss */
+  /* line 99, /Users/wilsontr/git/photostory/sass/_album.scss */
   article {
     padding: 2.5em 0 0 0;
   }
-  /* line 98, sass/_album.scss */
+  /* line 102, /Users/wilsontr/git/photostory/sass/_album.scss */
   article h1, article h1.entry-title {
     font-size: 1.8em;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 400px), only screen and (min-device-width: 320px) and (max-device-width: 400px) {
-  /* line 110, sass/_album.scss */
+  /* line 114, /Users/wilsontr/git/photostory/sass/_album.scss */
   .social-links-single:nth-of-type(1) {
     display: none;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 800px), only screen and (min-device-width: 320px) and (max-device-width: 800px) {
-  /* line 121, sass/_album.scss */
+  /* line 125, /Users/wilsontr/git/photostory/sass/_album.scss */
   .social-links-single:nth-of-type(1) {
     margin-top: -39px;
   }
-  /* line 125, sass/_album.scss */
+  /* line 129, /Users/wilsontr/git/photostory/sass/_album.scss */
   .social-links-single .social-links-share-button {
     opacity: 1;
     display: inline-block;
     position: relative;
     top: 0;
   }
-  /* line 132, sass/_album.scss */
+  /* line 136, /Users/wilsontr/git/photostory/sass/_album.scss */
   .social-links-single .social-links-block {
     opacity: 1;
     display: inline-block;
   }
-  /* line 138, sass/_album.scss */
+  /* line 142, /Users/wilsontr/git/photostory/sass/_album.scss */
   .social-links-single:hover .social-links-share-button {
     opacity: 1;
     text-align: right;
