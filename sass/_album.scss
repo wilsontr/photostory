@@ -34,6 +34,16 @@ article {
 
 	.gallery-image {
 		margin: 0px auto 100px;
+		position: relative;
+
+		.shrinkwrap {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;	
+		}
+
 
 		&:last-child {
 			margin-bottom: 0;
@@ -41,6 +51,7 @@ article {
 
 
 	}
+
 }
 
 
