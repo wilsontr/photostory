@@ -444,13 +444,14 @@ article h1 {
   -o-transition: opacity 300ms;
   transition: opacity 300ms;
   z-index: 1;
+  display: none;
 }
-/* line 75, sass/_album.scss */
+/* line 76, sass/_album.scss */
 .social-links-single .social-links-block {
   font-family: 'Socialglyphs-Regular', sans-serif;
   text-transform: none;
   font-size: 1.5em;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 300ms;
   -moz-transition: opacity 300ms;
   -o-transition: opacity 300ms;
@@ -458,108 +459,108 @@ article h1 {
   z-index: 50;
   position: relative;
 }
-/* line 84, sass/_album.scss */
+/* line 85, sass/_album.scss */
 .social-links-single .social-links-block li {
   display: inline-block;
   vertical-align: top;
   text-align: center;
 }
-/* line 89, sass/_album.scss */
+/* line 90, sass/_album.scss */
 .social-links-single .social-links-block li a {
   display: inline-block;
 }
-/* line 97, sass/_album.scss */
+/* line 98, sass/_album.scss */
 .social-links-single:hover .social-links-share-button {
   opacity: 0;
 }
-/* line 101, sass/_album.scss */
+/* line 102, sass/_album.scss */
 .social-links-single:hover .social-links-block {
   opacity: 1;
 }
 
-/* line 107, sass/_album.scss */
+/* line 108, sass/_album.scss */
 .more-albums {
   margin: 100px auto 50px;
 }
-/* line 110, sass/_album.scss */
+/* line 111, sass/_album.scss */
 .more-albums h3 {
   text-align: center;
   font-size: 1.5em;
 }
-/* line 115, sass/_album.scss */
+/* line 116, sass/_album.scss */
 .more-albums .tiles {
   text-align: center;
 }
-/* line 119, sass/_album.scss */
+/* line 120, sass/_album.scss */
 .more-albums .album-tile {
   display: inline-block;
   margin: 0px 10px 10px;
   text-align: left;
 }
-/* line 124, sass/_album.scss */
+/* line 125, sass/_album.scss */
 .more-albums .album-tile .thumb {
   max-height: 184px;
   overflow: hidden;
   margin-bottom: 7px;
 }
-/* line 129, sass/_album.scss */
+/* line 130, sass/_album.scss */
 .more-albums .album-tile .thumb img {
   max-width: 277px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1215px), only screen and (min-width: 320px) and (max-width: 1215px) {
-  /* line 141, sass/_album.scss */
+  /* line 142, sass/_album.scss */
   .more-albums {
     max-width: 780px;
   }
-  /* line 144, sass/_album.scss */
+  /* line 145, sass/_album.scss */
   .more-albums h3 {
     margin-bottom: 0.3em;
   }
-  /* line 149, sass/_album.scss */
+  /* line 150, sass/_album.scss */
   .more-albums .album-tile .thumb {
     max-height: 243px;
     margin: 0px 0px 15px;
   }
-  /* line 153, sass/_album.scss */
+  /* line 154, sass/_album.scss */
   .more-albums .album-tile .thumb img {
     max-width: 100%;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px), only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 165, sass/_album.scss */
+  /* line 166, sass/_album.scss */
   article {
     padding: 2.5em 0 0 0;
   }
-  /* line 168, sass/_album.scss */
+  /* line 169, sass/_album.scss */
   article h1, article h1.entry-title {
     font-size: 1.8em;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 400px), only screen and (min-device-width: 320px) and (max-device-width: 400px) {
-  /* line 180, sass/_album.scss */
+  /* line 181, sass/_album.scss */
   .social-links-single:nth-of-type(1) {
     display: none;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 800px), only screen and (min-device-width: 320px) and (max-device-width: 800px) {
-  /* line 191, sass/_album.scss */
+  /* line 192, sass/_album.scss */
   .social-links-single:nth-of-type(1) {
     margin-top: -39px;
   }
-  /* line 195, sass/_album.scss */
+  /* line 196, sass/_album.scss */
   .social-links-single .social-links-share-button {
     opacity: 1;
     display: inline-block;
     position: relative;
     top: 0;
   }
-  /* line 202, sass/_album.scss */
+  /* line 203, sass/_album.scss */
   .social-links-single .social-links-block {
     opacity: 1;
     display: inline-block;
   }
-  /* line 208, sass/_album.scss */
+  /* line 209, sass/_album.scss */
   .social-links-single:hover .social-links-share-button {
     opacity: 1;
     text-align: right;

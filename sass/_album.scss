@@ -70,13 +70,14 @@ article {
 		top: 10px;
 		@include transition(opacity 300ms);
 		z-index: 1;
+		display: none;
 	}
 
 	.social-links-block {
 		font-family: 'Socialglyphs-Regular', sans-serif;
 		text-transform: none;
 		font-size: 1.5em;
-		opacity: 0;
+		opacity: 1;
 		@include transition(opacity 300ms);
 		z-index: 50;
 		position: relative;
