@@ -20,6 +20,10 @@
 
 	body.home {
 		margin-top: 110px;
+
+		.more-albums-link {
+			display: none;
+		}
 		
 		header {
 			max-width: none;
@@ -54,12 +58,19 @@
 	}	
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px),
-	only screen and ( min-device-width: 320px ) and ( max-device-width: 480px ) { 
+@media only screen and (max-width : 480px),
+	only screen and ( max-device-width: 480px ) { 
 
 	body.home {
 		margin-top: 0;
 		
+		.more-albums-link {
+			margin: 35px 0px 75px;
+			text-align: center;
+			font-size: 1.5em;
+			display: block;
+		}
+
 		#river {
 			white-space: wrap;
 

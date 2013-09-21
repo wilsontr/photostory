@@ -9,6 +9,11 @@
 		display: inline-block;
 		margin: 0px 16px 8px;
 
+		.post-image {
+			max-height: 243px;
+			overflow: hidden;
+		}
+
 		.post-link {
 			h3 {
 				font-size: 1em;

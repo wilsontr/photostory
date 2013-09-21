@@ -30,5 +30,7 @@ foreach ( $posts as $post ) {
 
 </div>
 
+<div class="more-albums-link"><a href="/albums/">More Albums</a></div>
+
 
 <?php get_footer(); ?>

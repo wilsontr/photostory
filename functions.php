@@ -160,3 +160,4 @@ function photostory_gallery($output, $attr) {
 
 	return $out;
 }
+

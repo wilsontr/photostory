@@ -41,9 +41,10 @@ function album_class_names($classes) {
 
 		<?php get_template_part('single-social'); ?>
 
+		<?php get_template_part('more-albums'); ?>
+
 	</article><!-- #post-## -->
 
 <?php endwhile; /* end of the loop */ ?>
-
 
 <?php get_footer(); ?>
