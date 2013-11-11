@@ -405,13 +405,14 @@ article h1 {
 .gallery {
   text-align: center;
   width: 100%;
+  clear: both;
 }
-/* line 35, sass/_album.scss */
+/* line 36, sass/_album.scss */
 .gallery .gallery-image {
   margin: 0px auto 100px;
   position: relative;
 }
-/* line 39, sass/_album.scss */
+/* line 40, sass/_album.scss */
 .gallery .gallery-image .shrinkwrap {
   position: absolute;
   left: 0;
@@ -419,19 +420,19 @@ article h1 {
   width: 100%;
   height: 100%;
 }
-/* line 48, sass/_album.scss */
+/* line 49, sass/_album.scss */
 .gallery .gallery-image:last-child {
   margin-bottom: 0;
 }
 
-/* line 58, sass/_album.scss */
+/* line 59, sass/_album.scss */
 .social-links-single {
   position: relative;
   float: right;
   display: inline-block;
   text-align: right;
 }
-/* line 64, sass/_album.scss */
+/* line 65, sass/_album.scss */
 .social-links-single .social-links-share-button {
   position: absolute;
   color: #999;
@@ -446,7 +447,7 @@ article h1 {
   z-index: 1;
   display: none;
 }
-/* line 76, sass/_album.scss */
+/* line 77, sass/_album.scss */
 .social-links-single .social-links-block {
   font-family: 'Socialglyphs-Regular', sans-serif;
   text-transform: none;
@@ -459,108 +460,108 @@ article h1 {
   z-index: 50;
   position: relative;
 }
-/* line 85, sass/_album.scss */
+/* line 86, sass/_album.scss */
 .social-links-single .social-links-block li {
   display: inline-block;
   vertical-align: top;
   text-align: center;
 }
-/* line 90, sass/_album.scss */
+/* line 91, sass/_album.scss */
 .social-links-single .social-links-block li a {
   display: inline-block;
 }
-/* line 98, sass/_album.scss */
+/* line 99, sass/_album.scss */
 .social-links-single:hover .social-links-share-button {
   opacity: 0;
 }
-/* line 102, sass/_album.scss */
+/* line 103, sass/_album.scss */
 .social-links-single:hover .social-links-block {
   opacity: 1;
 }
 
-/* line 108, sass/_album.scss */
+/* line 109, sass/_album.scss */
 .more-albums {
   margin: 100px auto 50px;
 }
-/* line 111, sass/_album.scss */
+/* line 112, sass/_album.scss */
 .more-albums h3 {
   text-align: center;
   font-size: 1.5em;
 }
-/* line 116, sass/_album.scss */
+/* line 117, sass/_album.scss */
 .more-albums .tiles {
   text-align: center;
 }
-/* line 120, sass/_album.scss */
+/* line 121, sass/_album.scss */
 .more-albums .album-tile {
   display: inline-block;
   margin: 0px 10px 10px;
   text-align: left;
 }
-/* line 125, sass/_album.scss */
+/* line 126, sass/_album.scss */
 .more-albums .album-tile .thumb {
   max-height: 184px;
   overflow: hidden;
   margin-bottom: 7px;
 }
-/* line 130, sass/_album.scss */
+/* line 131, sass/_album.scss */
 .more-albums .album-tile .thumb img {
   max-width: 277px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1215px), only screen and (min-width: 320px) and (max-width: 1215px) {
-  /* line 142, sass/_album.scss */
+  /* line 143, sass/_album.scss */
   .more-albums {
     max-width: 780px;
   }
-  /* line 145, sass/_album.scss */
+  /* line 146, sass/_album.scss */
   .more-albums h3 {
     margin-bottom: 0.3em;
   }
-  /* line 150, sass/_album.scss */
+  /* line 151, sass/_album.scss */
   .more-albums .album-tile .thumb {
     max-height: 243px;
     margin: 0px 0px 15px;
   }
-  /* line 154, sass/_album.scss */
+  /* line 155, sass/_album.scss */
   .more-albums .album-tile .thumb img {
     max-width: 100%;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px), only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 166, sass/_album.scss */
+  /* line 167, sass/_album.scss */
   article {
     padding: 2.5em 0 0 0;
   }
-  /* line 169, sass/_album.scss */
+  /* line 170, sass/_album.scss */
   article h1, article h1.entry-title {
     font-size: 1.8em;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 400px), only screen and (min-device-width: 320px) and (max-device-width: 400px) {
-  /* line 181, sass/_album.scss */
+  /* line 182, sass/_album.scss */
   .social-links-single:nth-of-type(1) {
     display: none;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 800px), only screen and (min-device-width: 320px) and (max-device-width: 800px) {
-  /* line 192, sass/_album.scss */
+  /* line 193, sass/_album.scss */
   .social-links-single:nth-of-type(1) {
     margin-top: -39px;
   }
-  /* line 196, sass/_album.scss */
+  /* line 197, sass/_album.scss */
   .social-links-single .social-links-share-button {
     opacity: 1;
     display: inline-block;
     position: relative;
     top: 0;
   }
-  /* line 203, sass/_album.scss */
+  /* line 204, sass/_album.scss */
   .social-links-single .social-links-block {
     opacity: 1;
     display: inline-block;
   }
-  /* line 209, sass/_album.scss */
+  /* line 210, sass/_album.scss */
   .social-links-single:hover .social-links-share-button {
     opacity: 1;
     text-align: right;
